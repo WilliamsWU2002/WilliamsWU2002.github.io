@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[乘法逆元]]></title>
     <url>%2F2018%2F05%2F28%2F%E4%B9%98%E6%B3%95%E9%80%86%E5%85%83%2F</url>
-    <content type="text"><![CDATA[关键词: 乘法逆元]]></content>
+    <content type="text"><![CDATA[关键词: 乘法逆元 乘法逆元定义满足 $b \times k ≡ 1 \ (mod \ p)$的$k$的值就是$b$关于$p$的乘法逆元。这里我们只讨论当模数$p$为素数的情况，因为如果模数不为素数，则不一定每个数都有逆元。]]></content>
       <categories>
         <category>模板</category>
       </categories>
