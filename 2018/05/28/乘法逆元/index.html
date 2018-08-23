@@ -113,7 +113,7 @@ tpwidget("show");</script>
 <meta property="og:site_name" content="William&#39;s Blog">
 <meta property="og:description" content="关键词: 乘法逆元">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-23T08:11:13.335Z">
+<meta property="og:updated_time" content="2018-08-23T08:15:51.881Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="乘法逆元">
 <meta name="twitter:description" content="关键词: 乘法逆元">
@@ -443,8 +443,7 @@ tpwidget("show");</script>
 <a id="more"></a>
 <h2 id="乘法逆元"><a href="#乘法逆元" class="headerlink" title="乘法逆元"></a>乘法逆元</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>满足 $b \times k ≡ 1  (mod  p)$的$k$的值就是$b$关于$p$的乘法逆元。<br><strong>这里我们只讨论当模数$p$为素数的情况，因为如果模数不为素数，则不一定每个数都有逆元。</strong></p>
 <h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><p>乘法逆元一大重要应用就是模意义下的除法<br>因为$(a \div b)  mod  p \neq a  mod  p+b  mod  p $<br>所以当我们要求$(a \div b)  mod  p$的值，且$a$很大，无法直接求得$a \div b$的值时，我们就要用到乘法逆元。 </p>
-<h3 id="欧几里得"><a href="#欧几里得" class="headerlink" title="欧几里得"></a>欧几里得</h3><p><strong>最大公约数  gcd</strong></p>
-<p>$$<br>gcd(a,b)=\left { a \qquad \qquad \quad b=0 \atop gcd(b,a \, mod \, b ) \quad  b \neq 0\right .<br>$$</p>
+<h3 id="欧几里得"><a href="#欧几里得" class="headerlink" title="欧几里得"></a>欧几里得</h3><p><strong>最大公约数  gcd</strong><br>$$<br>gcd(a,b)=\left { a \qquad \qquad \quad b=0 \atop gcd(b,a \, mod \, b ) \quad  b \neq 0\right .<br>$$</p>
 <p>代码实现：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">gcd</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> !b?a:gcd(b,a%b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p><strong>最小公倍数  lcm</strong><br>而两数相乘除以最大公约数即为最小公倍数</p>
 <p>$lcm(a,b)=\left { {\frac{a \times b}{gcd(a.b)}} \right.$</p>
