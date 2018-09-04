@@ -113,7 +113,7 @@ tpwidget("show");</script>
 <meta property="og:site_name" content="William&#39;s Blog">
 <meta property="og:description" content="关键词: 头文件">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-20T05:48:26.073Z">
+<meta property="og:updated_time" content="2018-08-29T07:34:15.326Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="头文件">
 <meta name="twitter:description" content="关键词: 头文件">
@@ -458,7 +458,7 @@ tpwidget("show");</script>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//////////////////////////read///////////////////////////</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">read</span><span class="params">(T&amp; x)</span></span>&#123;<span class="keyword">char</span> ch;x=<span class="number">0</span>;<span class="keyword">bool</span> flag=<span class="literal">false</span>;ch=getchar();<span class="keyword">while</span> (ch&gt;<span class="string">'9'</span>||ch&lt;<span class="string">'0'</span>)&#123;<span class="keyword">if</span> (ch==<span class="string">'-'</span>)flag=<span class="literal">true</span>;ch=getchar();&#125;<span class="keyword">while</span> ((ch&lt;=<span class="string">'9'</span>&amp;&amp;ch&gt;=<span class="string">'0'</span>)) &#123;x=x*<span class="number">10</span>+ch-<span class="string">'0'</span>;ch=getchar();&#125;<span class="keyword">if</span>(flag)x*=<span class="number">-1</span>;&#125;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">read</span><span class="params">(T&amp; x, T&amp; y)</span></span>&#123;read(x);read(y);&#125;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">read</span><span class="params">(T&amp; x, T&amp; y, T&amp; z)</span></span>&#123;read(x);read(y);read(z);&#125;</span><br></pre></td></tr></table></figure>
 <p>读入优化 为了偷懒还设置了可以一次读入2、3个的</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/////////////////variables&amp;functions/////////////////////</span></span><br><span class="line">__attribute__((optimize(<span class="string">"Ofast"</span>),target(<span class="string">"no-ieee-fp,arch=amdfam10"</span>)))<span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	xxx</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>至于加在int main前的那句话<br>我也不知道是干啥的<br>但是听一位大（基）佬说可以玄学优化<br>那就加上了呗!</p>
+<p>至于加在int main前的那句话<br>我也不知道是干啥的<br>但是听说可以优化（和pragma差不多吧）<br>反正NOIP不允许用（笑</p>
 
       
     </div>
@@ -583,7 +583,7 @@ tpwidget("show");</script>
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -605,7 +605,7 @@ tpwidget("show");</script>
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
